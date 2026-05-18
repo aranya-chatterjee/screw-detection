@@ -6,7 +6,7 @@ from ultralytics import YOLO
 model_path = 'weights/yolov8_epo500.pt'
 
 st.set_page_config(
-    page_title="Object Detection using YOLOv8", 
+    page_title="Object Detection Model BETA ", 
     page_icon="🤖",     
     layout="wide",      
     initial_sidebar_state="expanded"    
@@ -29,7 +29,7 @@ with st.sidebar:
     confidence = float(st.slider(
         "Select Model Confidence", 25, 100, 40)) / 100
 
-st.title("Object Detection using YOLOv8")
+st.title("Object Detection Model BETA ")
 
 col1, col2 = st.columns(2)
 
